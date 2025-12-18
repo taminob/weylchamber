@@ -319,9 +319,9 @@ class WeylChamber():
         ax.yaxis.set_ticklabels(['0', '', '', '', '', r'$\pi/2$'])
         ax.zaxis.set_ticks([0, 0.1, 0.2, 0.3, 0.4, 0.5])
         ax.zaxis.set_ticklabels(['0', '', '', '', '', r'$\pi/2$'])
-        ax.tick_params(axis='x', pad=self.c1_tickspad)
-        ax.tick_params(axis='y', pad=self.c2_tickspad)
-        ax.tick_params(axis='z', pad=self.c2_tickspad)
+        ax.tick_params(axis='x', pad=self.c1_tickspad, labelsize=self.ticklabelsize)
+        ax.tick_params(axis='y', pad=self.c2_tickspad, labelsize=self.ticklabelsize)
+        ax.tick_params(axis='z', pad=self.c2_tickspad, labelsize=self.ticklabelsize)
         [t.set_va('center') for t in ax.get_yticklabels()]
         [t.set_ha('left') for t in ax.get_yticklabels()]
         [t.set_va('center') for t in ax.get_zticklabels()]
