@@ -50,9 +50,6 @@ class WeylChamber():
         elevation view angle in degrees
     dpi: int {300}
         Resolution to use when saving to dpi, or showing interactively
-    linecolor: str {'black'}
-        Color to be used when drawing lines (e.g. the edges of the Weyl
-        chamber)
     show_c1_label: bool
         Whether or not to show the c1 axis label
     show_c2_label: bool
@@ -141,7 +138,6 @@ class WeylChamber():
         self.bottom_margin =  0.0
         self.right_margin =  0.3
         self.top_margin =  0.0
-        self.linecolor = 'black'
         self.show_c1_label = True
         self.show_c2_label = True
         self.show_c3_label = True
